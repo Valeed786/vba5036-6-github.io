@@ -1,0 +1,378 @@
+/* Base Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #4a7c59;
+    color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#logo {
+    margin-right: 20px;
+}
+
+#logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#banner h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav {
+    background-color: #2c5e2e;
+    padding: 0.5rem 0;
+    margin: -1rem -1rem 0 -1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+/* Aside and Advertisement Styles */
+aside {
+    background-color: #e9f5db;
+    padding: 20px;
+    margin: 20px;
+}
+
+aside .ad {
+    background-color: #f0f8f0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Current Sales Section Styles */
+#current-sales {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#current-sales img {
+    max-width: 200px;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Special Offers Styles */
+.ad h3 {
+    color: #2c5e2e;
+    margin-top: 0;
+}
+
+/* Sign Up Page Specific Styles */
+.signup-container {
+    max-width: 800px;
+    margin: 40px auto 80px;
+    padding: 0 20px;
+}
+
+.signup-title {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#signup-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #2c5e2e;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4a7c59;
+    box-shadow: 0 0 0 3px rgba(74, 124, 89, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+.signup-button {
+    background-color: #4a7c59;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.signup-button:hover {
+    background-color: #2c5e2e;
+}
+
+/* Form Validation Styles */
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.form-group input.is-invalid {
+    border-color: #dc3545;
+}
+
+.form-group input.is-invalid + .error-message {
+    display: block;
+}
+
+.form-group input.is-valid {
+    border-color: #198754;
+}
+
+/* JSON Display Styles */
+#json-output {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: none;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1f2937;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Utility Classes */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+/* Bootstrap Style Overrides */
+.navbar-brand {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link.active {
+    color: #e9f5db;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Header and Navigation */
+    #banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo {
+        margin: 0 0 1rem 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.25rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Main Content */
+    main {
+        margin: 10px;
+    }
+
+    aside {
+        margin: 10px;
+    }
+
+    /* Sign Up Form */
+    .signup-container {
+        margin: 20px auto 60px;
+        padding: 0 15px;
+    }
+
+    .signup-title {
+        font-size: 2rem;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #signup-form {
+        padding: 1.5rem;
+    }
+
+    .form-group input {
+        padding: 0.6rem;
+    }
+
+    .signup-button {
+        width: 100%;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: #fff;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #signup-form {
+        box-shadow: none;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .signup-button {
+        display: none;
+    }
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.error-message.show {
+    animation: fadeIn 0.3s ease-in-out;
+}
